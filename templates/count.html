@@ -1,0 +1,19 @@
+<h1>there are {{ count }} words in your text and {{length}} letters</h1>
+
+<a href="{% url 'home'  %}">start again</a>
+
+<h1>your input:</h1>
+{{ fulltext }}
+
+<h1>here is how many times words are repeated:</h1>
+
+{% for word, counttotal in worddictionary  %}
+
+{{word}} - {{ counttotal }}
+
+<br/>
+
+
+
+
+{% endfor  %}
